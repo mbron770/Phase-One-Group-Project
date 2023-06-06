@@ -1,0 +1,54 @@
+
+.jumbotron {
+    background-image: url("src/coverImage.png") ;
+    background-size: 100% 100%;
+
+
+}
+
+.display-4{
+    margin-left: 75px;
+}
+
+.lead{
+    margin-left: 75px; 
+}
+
+.buy-button{
+    margin-left: 75px;
+}
+
+.coinCards{
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+#detailsCard{
+    margin-bottom : 5px;
+}
+
+.card-body{
+    font-size: 16pt; 
+}
+
+#marketCap{
+    margin-left: 100px; 
+
+}
+
+#supply{
+    margin-left: 100px; 
+}
+
+#price{
+    margin-left: 100px; 
+}
+
+#addToCartInCardButton{
+    margin-left: 100px;
+}
+
+#nameAndIDOfCoin{
+    margin-left: 2px;
+}
