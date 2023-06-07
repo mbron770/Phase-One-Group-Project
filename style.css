@@ -41,14 +41,46 @@
     margin-left: 100px; 
 }
 
-#price{
-    margin-left: 100px; 
+
+
+#nameAndIDOfCoin{
+    width: 100px; 
+    margin-left: 2px;
 }
 
-#addToCartInCardButton{
+#price{
+    width: 100px; 
     margin-left: 100px;
 }
 
-#nameAndIDOfCoin{
-    margin-left: 2px;
+#supply{
+    width: 100px;
 }
+
+#marketCap{
+    width: 100px; 
+}
+
+#addToCartInCardButton{
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    margin-left: 175px; 
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
