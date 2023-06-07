@@ -13,6 +13,7 @@ const coinCards=document.querySelector(".coinCards")
         const detailsCard=document.createElement("div")
         detailsCard.className="card text-white bg-dark mb-3" 
         detailsCard.id = 'detailsCard'
+        detailsCard.setAttribute('draggable', true)
 
             const cardBody =document.createElement("div")
             cardBody.className="card-body"
