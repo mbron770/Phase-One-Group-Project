@@ -1,15 +1,39 @@
 const coinUrl="http://localhost:3000/coins"
+const cartUrl="http://localhost:3000/cart"
+let cartQuantity
+let coinNameInCart
+let cartTotal
+let priceOfDraggedCoin
+let balance1 
+let quantity1
+let nameInDropDown
+function init(coinUrl){
+
+
+
 function fetchCoins(coinUrl){
     fetch(coinUrl)
     .then(response=>response.json())
-    .then(coins=>{coins.forEach(coin => createCoinCard(coin))})
+    .then(coins=>{coins.forEach(coin => {
+        createCoinCard(coin)
+        addOptions(coin)
+    }
+    )})
     .catch(error => alert(error.message))
 }
+fetchCoins(coinUrl)
 
 
-const coinCards=document.querySelector(".coinCards")
+
+
+
     function createCoinCard(coin){
+
+        coinNameInCart = coin.name
+        
+
     
+        const coinCards=document.querySelector(".coinCards")
         const detailsCard=document.createElement("div")
         detailsCard.className="card text-white bg-dark mb-3" 
         detailsCard.id = 'detailsCard'
@@ -69,3 +93,95 @@ const coinCards=document.querySelector(".coinCards")
                 detailsCard.appendChild(cardBody)
                 coinCards.appendChild(detailsCard)
     }
+
+function addOptions(coin){
+        coinNameInCart=coin.name
+        const option =document.createElement("option")
+        option.textContent= coin.name
+        document.querySelector("#coinList").append(option)   
+    }
+    function fetchCart(cartUrl) {
+        fetch(cartUrl).then(response => response.json())
+        .then(cart => printCartDetails(cart))
+        .catch(error => alert(error.message))
+    }
+    fetchCart(cartUrl)
+
+    function updateCart(cartUrl, cartQuantity, coinNameInCart, cartTotal){
+        fetch(cartUrl, {
+              method: 'PATCH',
+              headers: {
+              'Content-Type': 'application/json', 
+               'Accept': 'application/json'
+           }, 
+
+              body: JSON.stringify({quantity: cartQuantity, 
+              names: coinNameInCart, total: cartTotal})
+      }).then(response => response.json())
+      .then(cart => printCartDetails(cart))
+      .catch(error => alert(error.message))
+  }
+  updateCart(cartUrl, cartQuantity, coinNameInCart, cartTotal)
+
+  function printCartDetails(cart){
+    cartQuantity = cart.quantity
+    coinNameInCart = cart.names
+    cartTotal = cart.total
+
+    document.querySelector('#nameInCart').textContent = `Coin: ${cart.names}`
+    document.querySelector('#amountInCart').textContent = `Total Quantity: ${cart.quantity}`
+    document.querySelector('#shoppingCartAmount').textContent = cart.quantity
+    document.querySelector('#totalInCart').textContent = `Total: $${cart.total}`
+
+}
+// function updateCart(e){
+//         e.preventDefault()
+//         const amount = e.target.coinAmount.value
+//         const total=cart.total+amount
+//         const updatedCart={}
+//         updatedCart.total= total
+//         document.querySelector("#totalBuyAmount").textcontent=total
+    // fetch(cartUrl, {
+    //     method: 'PATCH',
+    //     headers: {
+    //       "Content-Type": 'application/json',
+    //       "Accept" : 'application/json'
+    //     },
+    //     body: JSON.stringify(updatedCart)
+    //   }).then(res => res.json())
+    //   .then(cart => {
+    //     document.querySelector("#totalBuyAmount").textContent= cart.total
+    //   })
+    //   .catch(e=>alert(e.message))
+    
+    document.querySelector("#AddtoCartForm").addEventListener("submit",(e)=>{
+        e.preventDefault()
+        // cartQuantity = cart.quantity
+        // coinNameInCart = cart.names
+        // cartTotal = cart.total
+        cartQuantity = e.target.coinAmount.value
+        //const total=cartTotal+cartQuantity
+        cartTotal= document.querySelector("#totalBuyAmount").textcontent
+        //const updatedCart={}
+        //updatedCart.total= total
+        updateCart(cartUrl, cartQuantity, coinNameInCart, cartTotal)
+    
+     })
+    }
+init(coinUrl)
+
+
+{/* <div class="form-group" >
+<label class="form-label" for="amount">Select Quantity</label>
+<input type="number" id="amount" name ="coinAmount" class="form-control" />
+</div>
+<!--create the following span ID via dom and add 
+dollar sign and total via sting interpolation-->
+<div class="total">
+Total: $<span id = 'totalBuyAmount'></span>
+</div>
+<br>
+<!--this is the button for the submit event-->
+<button type="submit" class="btn btn-dark">Add to Cart</button> */}
+
+    

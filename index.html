@@ -64,28 +64,27 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <form id = 'AddtoCartForm'>
                             <div class="form-group">
                                 <label class="form-label" for="typeNumber">Select a Coin</label>
                                 <!-- select CoinList to populate it with coins -->
                                 <select id="coinList" class="form-control" >
-                                    <option id = 'btc'>1</option>
-                                    <!--GENERATE OPTION TAGS with the ids of the coin symbols via dom for all coins -->
+                                   <br>
     
                                   </select>
                             </div>
-                            <div class="form-group">
-                                <label class="form-label" for="amount">Select an Amount</label>
-                                <input type="number" id="amount" class="form-control" />
+                            <div class="form-group" >
+                                <label class="form-label" for="amount">Select Quantity</label>
+                                <input type="number" id="amount" name ="coinAmount" class="form-control" />
                             </div>
                             <!--create the following span ID via dom and add 
                                 dollar sign and total via sting interpolation-->
                             <div class="total">
-                             Total: $<span id = 'totalBuyAmount'>5</span>
+                             Total: $<span id = 'totalBuyAmount'></span>
                             </div>
                             <br>
                             <!--this is the button for the submit event-->
-                            <button type="submit" id ='addToCartButton' class="btn btn-dark">Add to Cart</button>
+                            <button type="submit" class="btn btn-dark">Add to Cart</button>
                             
                             <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
                         </form>

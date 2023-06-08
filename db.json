@@ -103,8 +103,9 @@
     "cart": [
       {
         "id": 1,
-        "name": [ ],
-        "total": 0
+        "names": "Bitcoin",
+        "quantity": 6,
+        "total": 156000
       }
     ]
   }
