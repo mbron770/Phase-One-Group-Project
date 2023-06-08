@@ -40,6 +40,10 @@ function printCartDetails(cart){
 
 
 document.querySelector("#addToCartInCardButton").addEventListener("click", (e)=>{
+    cartQuantity++
+    coinNameInCart = document.querySelector('#nameAndIDOfCoin').textContent
+    priceOfDraggedCoin = document.querySelector('#price').textContent
+    cartTotal = parseInt(priceOfDraggedCoin.replace("$", "")) * cartQuantity
     e.preventDefault()
   updateCart(URL, cartQuantity, coinNameInCart, cartTotal)
 })
