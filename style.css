@@ -1,3 +1,9 @@
+/* @media screen and (min-width:1px) and (max-width:1365px) {
+    body {width:100%;}
+ }
+ @media screen and (min-width:1366px) {
+   body {width:100%;}
+ }*/
 
 .jumbotron {
     background-image: url("src/coverImage.png") ;
@@ -33,16 +39,16 @@
 }
 
 #marketCap{
-    margin-left: 100px; 
+    margin-left: 50px; 
 
 }
 
 #supply{
-    margin-left: 100px; 
+    margin-left: 50px; 
 }
 
 #price{
-    margin-left: 100px; 
+    margin-left: 50px; 
 }
 
 #addToCartInCardButton{
@@ -51,4 +57,8 @@
 
 #nameAndIDOfCoin{
     margin-left: 2px;
+}
+
+#theCart{
+    width: 25%; 
 }

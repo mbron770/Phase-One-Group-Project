@@ -1,110 +1,110 @@
 {
-    "coins": [
-      {
-        "id": 1,
-        "thumbnail":"https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579",
-        "name": "Bitcoin",
-        "symbol": "BTC",
-        "price": 25784.9000859286845234,
-        "supply": 19393931.0000000000000000,
-        "marketCapUsd": 500070573108.3949785675874854
-     },
-
-     {
-        "id": 2,
-        "thumbnail":"https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880",
-        "name": "Ethereum",
-        "symbol": "ETH",
-        "price": 1814.3582316848492503,
-        "supply": 120235693.0572198600000000,
-        "marketCapUsd": 218150619440.6997312172055961
-     },
-
-     {
-        "id": 3,
-        "thumbnail":"https://assets.coingecko.com/coins/images/11636/thumb/rndr.png?1638840934",
-        "name": "Render",
-        "symbol": "RNDR",
-        "price": 0.00008691146823247667,
-        "supply": 120235693.0572198600000000,
-        "marketCapUsd": 218150619440.6997312172055961
-     },
-
-     {
-        "id": 4,
-        "thumbnail":"https://assets.coingecko.com/coins/images/16547/thumb/photo_2023-03-29_21.47.00.jpeg?1680097630",
-        "name": "Arbitrum",
-        "symbol": "ARB",
-        "price": 0.000044094802747191,
-        "supply": 432232.0572198600000000,
-        "marketCapUsd": 433322323.44333232
-     },
-
-     {
-        "id": 5,
-        "thumbnail":"https://assets.coingecko.com/coins/images/13429/thumb/ovr_logo.png?1608518911",
-        "name": "Ovr",
-        "symbol": "OVR",
-        "price": 0.000017332824059251673,
-        "supply": 67732.02121,
-        "marketCapUsd": 764322.32
-     },
-
-     {
-        "id": 6,
-        "thumbnail": "https://assets.coingecko.com/coins/images/5/small/dogecoin.png?1547792256",
-        "name": "Meme",
-        "symbol": "M",
-        "price": 0.10222022,
-        "supply": 72216121211.021,
-        "marketCapUsd": 15870533372.900288
-     },
-
-     {
-        "id": 7,
-        "thumbnail": "https://assets.coingecko.com/coins/images/13442/small/steth_logo.png?1608607546",
-        "name": "Ethereum 2",
-        "symbol": "ETH2",
-        "price": 181.3582316848492503,
-        "supply": 12023.0572198600000000,
-        "marketCapUsd": 2181506.6997312172055961
-     },
-
-     {
-        "id": 8,
-        "thumbnail": "https://assets.coingecko.com/coins/images/26375/thumb/sui_asset.jpeg?1683114182",
-        "name": "Sui",
-        "symbol": "SUI",
-        "price": 0.000031529013268311664,
-        "supply": 14523.0572198600000000,
-        "marketCapUsd": 543326.9997312172055961
-     },
-
-     {
-        "id": 9,
-        "thumbnail": "https://assets.coingecko.com/coins/images/29850/thumb/pepe-token.jpeg?1682922725",
-        "name": "Pepe",
-        "symbol": "PEPE",
-        "price": 3.95093135675,
-        "supply": 127883.22323,
-        "marketCapUsd": 231122.1212
-     },
-
-     {
-        "id": 10,
-        "thumbnail": "https://assets.coingecko.com/coins/images/29948/thumb/EDU_Logo.png?1682327357",
-        "name": "Open Campus",
-        "symbol": "EDU",
-        "price": 2.50323,
-        "supply": 101328.323,
-        "marketCapUsd": 4224232.1111111
-     }
-    ],
-    "cart": [
-      {
-        "id": 1,
-        "name": [ ],
-        "total": 0
-      }
-    ]
-  }
+  "coins": [
+    {
+      "id": 1,
+      "thumbnail": "https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "price": 25784,
+      "supply": 19393931,
+      "marketCapUsd": 500070573108.39496
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880",
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "price": 18142,
+      "supply": 125635693.05721986,
+      "marketCapUsd": 321150619440.6997
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://assets.coingecko.com/coins/images/11636/thumb/rndr.png?1638840934",
+      "name": "Render",
+      "symbol": "RNDR",
+      "price": 90001,
+      "supply": 45673931,
+      "marketCapUsd": 600070573108.395
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://assets.coingecko.com/coins/images/16547/thumb/photo_2023-03-29_21.47.00.jpeg?1680097630",
+      "name": "Arbitrum",
+      "symbol": "ARB",
+      "price": 78002,
+      "supply": 43203931,
+      "marketCapUsd": 516170573108.39496
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://assets.coingecko.com/coins/images/13429/thumb/ovr_logo.png?1608518911",
+      "name": "Ovr",
+      "symbol": "OVR",
+      "price": 10005,
+      "supply": 21343931,
+      "marketCapUsd": 906770573108.395
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://assets.coingecko.com/coins/images/5/small/dogecoin.png?1547792256",
+      "name": "Meme",
+      "symbol": "M",
+      "price": 20145,
+      "supply": 56783931,
+      "marketCapUsd": 906570573108.395
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://assets.coingecko.com/coins/images/13442/small/steth_logo.png?1608607546",
+      "name": "Ethereum 2",
+      "symbol": "ETH2",
+      "price": 18100,
+      "supply": 78903931,
+      "marketCapUsd": 456270573108.39496
+    },
+    {
+      "id": 8,
+      "thumbnail": "https://assets.coingecko.com/coins/images/26375/thumb/sui_asset.jpeg?1683114182",
+      "name": "Sui",
+      "symbol": "SUI",
+      "price": 19022,
+      "supply": 54321931,
+      "marketCapUsd": 654321573108.395
+    },
+    {
+      "id": 9,
+      "thumbnail": "https://assets.coingecko.com/coins/images/29850/thumb/pepe-token.jpeg?1682922725",
+      "name": "Pepe",
+      "symbol": "PEPE",
+      "price": 32910,
+      "supply": 19393456,
+      "marketCapUsd": 670070573108.395
+    },
+    {
+      "id": 10,
+      "thumbnail": "https://assets.coingecko.com/coins/images/29948/thumb/EDU_Logo.png?1682327357",
+      "name": "Open Campus",
+      "symbol": "EDU",
+      "price": 92323,
+      "supply": 10093931,
+      "marketCapUsd": 400070573108.39496
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "names": "Bitcoin - BTC",
+      "quantity": 1,
+      "total": 26000
+    }
+  ],
+  "account": [
+    {
+      "id": 1,
+      "names": "Bitcoin - BTC",
+      "quantity": "2790000113151",
+      "balance": 14430000
+    }
+  ]
+}
