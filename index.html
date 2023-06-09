@@ -14,6 +14,10 @@
         <script defer type="text/javascript" src="index.js"></script>
     </head>
     <body>
+      <video autoplay loop muted id="background-video">
+        <source src="src/pro.mp4" type="video/mp4">
+      </video>
+    
         <!--Navbar-->
           <nav class="navbar sticky-top navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">
@@ -44,6 +48,7 @@
           </nav>
                 <!--PageContent-->
           <div class="jumbotron">
+        
             
             <h1 class="display-4">My Balance</h1>
             <!--PULL FROM DB POPULATE VIA DOM, USE STRING INTERPOLATION TO ADD DOLLAR SIGN-->
