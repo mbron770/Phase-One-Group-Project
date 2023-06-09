@@ -94,17 +94,17 @@
   "cart": [
     {
       "id": 1,
-      "names": "Bitcoin",
-      "quantity": 10000,
-      "total": 3000
+      "names": " Open Campus - EDU ",
+      "quantity": 376,
+      "total": 100
     }
   ],
   "account": [
     {
       "id": 1,
-      "names": "Bitcoin",
-      "quantity": 10035,
-      "balance": 399000
+      "names": " Open Campus - EDU ",
+      "quantity": 954,
+      "balance": 4111600
     }
   ]
 }
