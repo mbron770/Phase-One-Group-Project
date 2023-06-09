@@ -94,17 +94,17 @@
   "cart": [
     {
       "id": 1,
-      "names": "Bitcoin - BTC",
-      "quantity": 1,
-      "total": 26000
+      "names": "Bitcoin",
+      "quantity": 10000,
+      "total": 3000
     }
   ],
   "account": [
     {
       "id": 1,
-      "names": "Bitcoin - BTC",
-      "quantity": "2790000113151",
-      "balance": 14430000
+      "names": "Bitcoin",
+      "quantity": 10035,
+      "balance": 399000
     }
   ]
 }

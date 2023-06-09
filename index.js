@@ -222,13 +222,12 @@ function addOptions(coin){
     document.querySelector("#coinList").append(option)   
 }
 
-document.querySelector("#AddToCartForm").addEventListener("submit",(e)=>{
+document.querySelector("#AddToCartForm").addEventListener("click",(e)=>{
     e.preventDefault()
-    cartQuantity = document.querySelector('#amount').value
+    cartQuantity += parseInt(document.querySelector('#amount').value)
     coinNameInCart = document.querySelector('#coinList').value
-    cartQuantity++
-    updateCart(cartUrl, cartQuantity, coinNameInCart, 26000)
-   e.target.reset()
+    cartTotal += 1000
+    updateCart(cartUrl, cartQuantity, coinNameInCart, cartTotal)
  })
 
  document.querySelector('#updatedBalance').addEventListener("mouseover", ()=>{
